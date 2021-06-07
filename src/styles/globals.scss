@@ -1,7 +1,30 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 
-// TODO
+:root {
+   --pink-500: #ff57b2;
+   --black: #1a1d23;
+
+   --gray-100: #f8f8f8;
+   --gray-300: #d7d7d7;
+   --gray-600: #bbbbbb;
+}
+
+body {
+   background: var(--black);
+   font-family: Inter;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: bold;
+   font-family: Inter;
+   color: var(--gray-100);
+}

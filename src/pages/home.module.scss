@@ -1,1 +1,61 @@
-// TODO
+.container {
+   display: flex;
+   flex-direction: column;
+   padding: 2rem 0 5rem 0;
+}
+
+.post {
+   display: block;
+   width: 100%;
+   cursor: pointer;
+   text-decoration: none;
+
+   & + .post {
+      margin-top: 3rem;
+   }
+
+   strong {
+      display: block;
+      color: var(--gray-100);
+      font-weight: bold;
+      font-size: 1.75rem;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.5rem;
+   }
+
+   p {
+      color: var(--gray-300);
+      font-size: 1.125rem;
+      margin-bottom: 1.5rem;
+   }
+
+   span {
+      color: var(--gray-600);
+      font-size: 0.875rem;
+      display: inline-block;
+
+      & + span {
+         margin-left: 1.5rem;
+      }
+
+      svg {
+         width: 20px;
+         height: 20px;
+         vertical-align: middle;
+         margin-right: 0.5rem;
+      }
+   }
+}
+
+.loadMoreButton {
+   background: none;
+   border: 0;
+   cursor: pointer;
+   width: fit-content;
+   margin-top: 4rem;
+
+   color: var(--pink-500);
+   font-weight: 600;
+   font-size: 1.125rem;
+   font-family: Inter;
+}
